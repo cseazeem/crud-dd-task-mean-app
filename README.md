@@ -50,6 +50,6 @@ This project demonstrates cloud-based deployment and CI/CD automation for a simp
 ![CI/CD Workflow](screenshots/ci-cd-workflow.png)
 
 
-![UI Screenshot]("C:\Users\azeem\Pictures\Screenshots\Screenshot (14).png")
+![UI Screenshot](C:\Users\azeem\Pictures\Screenshots\Screenshot (14).png)
 
 
