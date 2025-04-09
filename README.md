@@ -1,27 +1,55 @@
-In this DevOps task, you need to build and deploy a full-stack CRUD application using the MEAN stack (MongoDB, Express, Angular 15, and Node.js). The backend will be developed with Node.js and Express to provide REST APIs, connecting to a MongoDB database. The frontend will be an Angular application utilizing HTTPClient for communication.  
+# DevOps Internship Assignment - MEAN Stack App
 
-The application will manage a collection of tutorials, where each tutorial includes an ID, title, description, and published status. Users will be able to create, retrieve, update, and delete tutorials. Additionally, a search box will allow users to find tutorials by title.
+## ✅ Summary
 
-## Project setup
+This project demonstrates cloud-based deployment and CI/CD automation for a simple MEAN stack application. Here's what has been completed:
 
-### Node.js Server
+### 1. 🛠 Cloud VM Setup
+- Provisioned an Ubuntu EC2 instance on AWS
+- Installed Docker, Node.js, npm, and other required tools
 
-cd backend
+### 2. 📦 App & Dependencies
+- Cloned the MEAN stack CRUD app (`crud-dd-task-mean-app`)
+- Installed Node.js dependencies using `npm install`
 
-npm install
+### 3. 🐳 Containerization
+- Dockerized the frontend and backend
+- Created Dockerfiles and optionally a `docker-compose.yml` to run both services together
 
-You can update the MongoDB credentials by modifying the `db.config.js` file located in `app/config/`.
+### 4. ⚙️ GitHub Actions CI/CD
+- Created a GitHub Actions workflow to:
+  - Build the Docker image
+  - Push it to Amazon ECR
+  - Deploy to ECS automatically on every push to `main` branch
 
-Run `node server.js`
+### 5. ☁️ Deployment
+- Successfully deployed containerized services to AWS (via ECS or EC2)
+- App is accessible via the public IP or load balancer
 
-### Angular Client
+---
 
-cd frontend
+## 🔐 Secrets Used in GitHub Actions
 
-npm install
+- `AWS_ACCESS_KEY_ID`
+- `AWS_SECRET_ACCESS_KEY`
 
-Run `ng serve --port 8081`
+---
 
-You can modify the `src/app/services/tutorial.service.ts` file to adjust how the frontend interacts with the backend.
+## 📎 Additional Files
 
-Navigate to `http://localhost:8081/`
+- `.github/workflows/deploy.yml` – CI/CD Pipeline
+- `.aws/task-def.json` – ECS Task Definition (if using ECS)
+- `Dockerfile` – For containerizing the app
+- `docker-compose.yml` – For local multi-container setup (optional)
+
+
+
+![Alt Text](path/to/image.png)
+
+
+![CI/CD Workflow](screenshots/ci-cd-workflow.png)
+
+
+![UI Screenshot]("C:\Users\azeem\Pictures\Screenshots\Screenshot (14).png")
+
+
