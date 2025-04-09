@@ -44,12 +44,14 @@ This project demonstrates cloud-based deployment and CI/CD automation for a simp
 
 
 
-![Alt Text](path/to/image.png)
+## 📸 Screenshots
 
+![Screenshot 10](screenshots/Screenshot%20(10).png)
 
-![CI/CD Workflow](screenshots/ci-cd-workflow.png)
+![Screenshot 14](screenshots/Screenshot%20(14).png)
 
+![Screenshot 15](screenshots/Screenshot%20(15).png)
 
-![UI Screenshot](screenshots/Screenshot (10).png)
+![Screenshot 19](screenshots/Screenshot%20(19).png)
 
-
+![Screenshot 20](screenshots/Screenshot%20(20).png)
